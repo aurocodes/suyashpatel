@@ -1,7 +1,13 @@
 /*images*/
+.main-body {
+    margin-top: -3.5%;
+}
 
 .backimage-style {
-    height: -5%;
+    /* height: -5%; */
+    min-height: 195.5px;
+    max-height: 195.5px;
+
     width: 100%;
     position: relative;
 }
@@ -19,6 +25,8 @@
     width: 200px;
     height: 200px;
     position: relative;
+    margin-top: 7.5%;
+    margin-left: -7.95%;
 }
 
 .inner {
