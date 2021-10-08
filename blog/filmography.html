@@ -20,7 +20,7 @@
 
 <body>
     <!--Adding Bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 50px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!--Tried To Add Icon in Navbar-->
         <a class="navbar-brand" href="../index.html">
             <img src="https://bit.ly/34iTcpx" width="30" height="30" alt="suyash">
@@ -59,26 +59,26 @@
     </nav>
 
     <!--Adding Name-->
-    <div id="blog">
-        <div id="blogtype">
-            <h1>Welcome to Filmography blog!</h1>
-        </div>
-        <div id="content">
-            <h1>my first blog</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero, exercitationem fugiat officia est delectus alias provident, ea, quia natus n</p>
-            <div>
-                <button onclick="Count()" id="OUTPUT" style="float: left;">LIKE 0</button>
-            <button onclick="UnCount()" id="OUTPUT1" style="float: right;">UNLIKE 0</button>
-
+    <div id="blog" class="bg-light pt-5">
+        <div class="container">
+            <div class="row mx-0">
+                <div class="col-12 text-center mb-3" id="blogtype">
+                    <h1 class="text-center">Welcome to filmography blog!</h1>
+                </div>
+                <div class="col-12 blog-article bg-white py-3 px-3 mb-3">
+                    <h3>Blog title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero, exercitationem fugiat officia est delectus alias provident, ea, quia natus n</p>
+                    <button class="btn btn-primary" onclick="Count()" id="OUTPUT" style="float: left;">LIKE 0</button>
+                    <button class="btn btn-secondary" onclick="UnCount()" id="OUTPUT1" style="float: right;">UNLIKE 0</button>
+                </div>
+                <div class="col-12 blog-article bg-white py-3 px-3 mb-3">
+                    <h3>Blog title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero, exercitationem fugiat officia est delectus alias provident, ea, quia natus n</p>
+                    <button class="btn btn-primary" onclick="Count1()" id="OUTPUTS" style="float: left;">LIKE 0</button>
+                    <button class="btn btn-secondary" onclick="UnCount1()" id="OUTPUTS1" style="float: right;">UNLIKE 0</button>
+                </div>
             </div>
         </div>
-        <div id="content">
-            <h1>my second blog</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero, exercitationem fugiat officia est delectus alias provident, ea, quia natus n</p>
-            <button onclick="Count1()" id="OUTPUTS" style="float: left;">LIKE 0</button>
-            <button onclick="UnCount1()" id="OUTPUTS1" style="float: right;">UNLIKE 0</button>
-        </div>
-
         <footer>
             <!-- FOOTER START -->
             <div class="footer" style="margin-top: 50px;">
@@ -145,7 +145,7 @@
             </div>
             <!-- END OF FOOTER -->
         </footer>
-
+    </div>
 </body>
 
 </html>
