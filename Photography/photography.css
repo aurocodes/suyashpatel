@@ -33,6 +33,23 @@ img.carousel-edit{
   -moz-box-sizing: border-box;
   padding: 0px 20px 20px 20px;
 }
+
+
+/* Adding custom scroolbar */
+::-webkit-scrollbar{
+    width: 20px
+  }
+  ::-webkit-scrollbar-track{
+  background-color: rgb(247, 252, 254);
+  
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color:#4f32c6;
+    border-radius: 1rem;
+    border:.3rem solid transparent;
+    background-clip: content-box;
+  }
 .footer .col h1 {
   margin: 0;
   padding: 0;
