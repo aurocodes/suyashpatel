@@ -3,10 +3,12 @@
     margin-bottom:15px;
     position: relative;
     margin: auto;
-    height: 40vw;
-    width: 40vw; 
+    height: 45vw;
+    width: 45vw; 
     background: url(clock.png) no-repeat;
     background-size: 100%;
+    background-color: rgb(46, 45, 58);
+    
 }
 
 #hour, #minute, #second{
