@@ -21,7 +21,7 @@
 }
 
 .outer {
-    background-color: white;
+    background-color: rgb(92, 83, 83);
     width: 200px;
     height: 200px;
     position: relative;
@@ -46,7 +46,7 @@
 /*footer*/
 
 .footer {
-    padding: 10px 0px 0px 1px;
+    padding: 10px 10px 0px 10px;
     width: 100%;
     position: relative;
     height: auto;
@@ -67,10 +67,10 @@
     margin: 0;
     padding: 0;
     font-family: inherit;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(171, 174, 185, 0.939);
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
@@ -100,7 +100,7 @@
 }
 
 .footer .col ul li:hover {
-    color: #ffffff;
+    color: #5ad151;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
