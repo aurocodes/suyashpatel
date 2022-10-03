@@ -5,7 +5,7 @@ setInterval(() => {
 updateTime()
 
 function updateTime() {
-    d = new Date("2020-10-10, 4:10:10");
+    d = new Date();
     htime = d.getHours();
     mtime = d.getMinutes();
     stime = d.getSeconds();
