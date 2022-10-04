@@ -86,7 +86,7 @@
 }
 .social ul li {
   display: inline-block;
-  padding-right: 5px !important;
+  padding-right: 1px !important;
 }
 
 .footer .col ul li:hover {
