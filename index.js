@@ -5,35 +5,37 @@ setInterval(() => {
 updateTime()
 
 function updateTime() {
+    
     d = new Date();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let day = JSON.stringify(days[d.getDay()]);
+    let month=d.getMonth();
+    let dat=d.getDate();
     htime = d.getHours();
     mtime = d.getMinutes();
     stime = d.getSeconds();
-    hrotation = 30*htime + mtime/2;
-    mrotation = 6*mtime;
-    srotation = 6*stime;
+    let m1="",m2="";
+    let tr=["","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"];
+    m2=JSON.stringify(tr[htime%12])
 
-    if(d.getHours() <= 6){
-        document.body.style.background = "linear-gradient(to bottom, #33ccff 0%, #ff9999 100%)"
-    }else if(d.getHours() <= 9){
-        document.body.style.background = "linear-gradient(to bottom, #ffcc66 0%, #ffffff 100%)"
-    }else if(d.getHours() <= 12){
-        document.body.style.background= "linear-gradient(to bottom, #ff9933 0%, #ffcccc 100%)"
-    }else if(d.getHours() <= 15){
-        document.body.style.background = "linear-gradient(to bottom, #ff6699 0%, #cc99ff 100%)"
-    }else if(d.getHours() <= 18){
-        document.body.style.background = "linear-gradient(to bottom, #ff6666 0%, #ff99ff 100%)"
-    }else if(d.getHours() <= 21){
-        document.body.style.background = "linear-gradient(to bottom, #0000cc 0%, #cc33ff 100%)"
-    }else if(d.getHours() <= 24){
-        document.body.style.background = "linear-gradient(to bottom, #000066 0%, #660066 100%)"
-    }
-    else{
-        document.body.style.background = "linear-gradient(to bottom, #ffcc66 0%, #ffffff 100%)"
-    }
-    
-    document.getElementById('hour').style.transform = `rotate(${hrotation}deg)`;
-    document.getElementById('minute').style.transform = `rotate(${mrotation}deg)`;
-    document.getElementById('second').style.transform = `rotate(${srotation}deg)`;
+    let ts=["","one","two","three","four","five","six","seven","eight","nine","ten"];
+    let tts=["eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"];
+    let tpp=["twenty","thirty","forty","fifty","sixty"]
+    if(mtime<=10)
+    m1=JSON.stringify(ts[mtime])
+    else if(mtime>10 && mtime<20)
+    m1=JSON.stringify(tts[mtime-11])
+    else 
+    m1=JSON.stringify(tpp[(Math.round(mtime/10)-3)]+" "+ts[mtime%10])
+    let m3=""
+    if(mtime!=0)
+    m3="past"
+    else
+    m3="o'clock"
+    document.getElementById("clock").innerHTML=`
+    It is currently <br>
+    ${JSON.parse(m2)} ${m3} ${JSON.parse(m1)}<br>
+    <span id="dayte">${JSON.parse(day)},${dat}/${month}</span>
+    `
 }
 
