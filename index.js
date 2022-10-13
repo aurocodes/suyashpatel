@@ -26,7 +26,7 @@ function updateTime() {
     else if(mtime>10 && mtime<20)
     m1=JSON.stringify(tts[mtime-11])
     else 
-    m1=JSON.stringify(tpp[(Math.round(mtime/10)-3)]+" "+ts[mtime%10])
+    m1=JSON.stringify(tpp[(Math.floor(mtime/10)-2)]+" "+ts[mtime%10])
     let m3=""
     if(mtime!=0)
     m3="past"
