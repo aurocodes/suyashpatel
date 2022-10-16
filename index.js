@@ -16,7 +16,10 @@ function updateTime() {
     stime = d.getSeconds();
     let m1="",m2="";
     let tr=["","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"];
-    m2=JSON.stringify(tr[htime%12])
+    if(htime==12||htime==00)  
+  {m2=JSON.stringify(tr[12])}
+  else
+   {m2=JSON.stringify(tr[htime%12])} 
 
     let ts=["","one","two","three","four","five","six","seven","eight","nine","ten"];
     let tts=["eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"];
