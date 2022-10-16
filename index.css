@@ -1,49 +1,35 @@
-#clockContainer{  
-    margin-top:15px;
-    margin-bottom:15px;
-    position: relative;
-    margin: auto;
-    height: 45vw;
-    width: 45vw; 
-    background: url(clock.png) no-repeat;
-    background-size: 100%;
-    background-color: rgb(46, 45, 58);
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+  background-color: #757575;
+  
+}
+#clock{
+font-family:Poppins;
+margin-top:10rem ;
+margin-left: 37px;
+margin-bottom: 25rem;
+font-size: 500%;
 }
 
-#hour, #minute, #second{
-    position: absolute;
-    background: black;
-    border-radius: 10px; 
-    transform-origin: bottom;
+#dayte{
+  font-size: 40px;
+  font-weight: 0.001px !important;
+  font-style: italic;
+  color: #C5CAE9;
 }
-#hour{
-    width: 1.8%;
-    height: 25%;
-    top: 25%;
-    left: 48.85%;
-    opacity: 0.8;  
-}
-#minute{
-    width: 1.6%;
-    height: 30%;
-    top: 19%;
-    left: 48.9%;
-    opacity: 0.8;  
-}
-#second{
-    width: 1%;
-    height: 40%;
-    top: 9%;
-    left: 49.25%;
-    opacity: 0.8; 
-    
-}
+
+#chillguy{
+  position: absolute;
+  right: 0;
+  top: 17%;
+  float: right;
+ }
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
   padding: 10px 0px 0px 1px;
   width: 100%;
-  position: relative;
+  position:auto;
+  bottom: 0;
   height: auto;
   background-color: #070617;
 }
